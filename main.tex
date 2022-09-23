@@ -30,6 +30,11 @@
 % List config helper
 \usepackage{enumitem}
 
+% Specify fonts
+% For pretty programming language names only
+\usepackage{fontspec}
+\newfontface\fontfaceLiberationSerif{Liberation Serif}
+
 % Hyperlinks
 % Pls ensure it is the last imported one
 \usepackage{hyperref}
@@ -37,6 +42,11 @@
 
 % No page number since this has only 1 page
 \pagenumbering{gobble}
+
+% Pretty C++ from https://isocpp.org/wiki/faq/misc-environmental-issues#latex-macros
+\newcommand{\Cpp}{C\nolinebreak[4]\hspace{-.05em}\raisebox{.4ex}{\tiny\bf ++}}
+% Pretty C# from https://tex.stackexchange.com/a/44537
+\newcommand{\Csharp}{C{\fontfaceLiberationSerif\#}}
 
 \begin{document}
 
@@ -96,8 +106,8 @@
 \section*{Abilities}
 \begin{itemize}[parsep=0.1cm,leftmargin=0.4cm]
   \item \textbf{Programming languages}:
-    I have production experiences on Python (Django), Rust, Go, JavaScript + TypeScript (React, Next.js).
-    I can also write C++ (basic modern C++), C, Shell script, Java, Verilog, C\# (sorted by familiarity).
+    I have production experiences on Python (Django), Rust, Go, JavaScript+TypeScript (React, Next.js).
+    I can also write \Cpp{} (basic modern \Cpp), C, Shell script, \LaTeX, Java, Verilog, \Csharp{} (sorted by familiarity).
   \item \textbf{Natural languages}: Mandarin Chinese (mother tongue), English, Japanese (elementary listening only).
 \end{itemize}
 
