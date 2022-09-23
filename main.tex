@@ -10,8 +10,97 @@
 % Lua code helper
 \usepackage{luacode}
 
+% Margins
+\usepackage[margin=2cm]{geometry}
+
+% No indent
+% \usepackage{parskip}
+% \setlength{\parindent}{0px}
+
+% Chinese fonts
+% \usepackage{luatexja-fontspec}
+% \setmainjfont{Noto Sans CJK SC}
+
+% Random text for debug
+\usepackage{blindtext}
+
+% Multiple column env
+\usepackage{multicol}
+
+% List config helper
+\usepackage{enumitem}
+
+% Hyperlinks
+% Pls ensure it is the last imported one
+\usepackage{hyperref}
+\hypersetup{colorlinks=true}
+
+% No page number since this has only 1 page
+\pagenumbering{gobble}
+
 \begin{document}
 
-Hello, world!
+\begin{center}
+  {\huge \textbf{Yulong Ming}}
+\end{center}
+
+\begin{multicols}{2}
+  [\section*{Profile}]
+  CS PhD student (2022--26) at City University of Hong Kong interested in Network Security.
+  FLOSS (free/libre and open-source software) enthusiast believing even (using FLOSS other than proprietary ones) once is help (from \href{https://www.gnu.org/philosophy/saying-no-even-once.html}{an article of FSF}).
+  GitHub active code contributor with about 1k contributions annually.
+  Linux fan running Arch Linux for everyday use.
+  he/him.
+
+  \begin{itemize}[itemsep=0cm,parsep=0cm]
+    \item GitHub: \href{https://github.com/myl7}{github.com/myl7}
+    \item Homepage: \href{https://myl.moe}{myl.moe}
+    \item Emails:
+    \begin{itemize}[itemsep=0cm,parsep=0cm,topsep=0cm,leftmargin=0.25cm,label=\labelitemiii]
+      \item \href{mailto:myl.7@my.cityu.edu.hk}{myl.7@my.cityu.edu.hk} (academic)
+      \item \href{mailto:myl7.moe@gmail.com}{myl7.moe@gmail.com} (general)
+      \item \href{mailto:myl@myl.moe}{myl@myl.moe} (code dev)
+    \end{itemize}
+    \item Address: Office G7308\#8, Yeung Kin Man Academic Building, City University of Hong Kong, Hong Kong
+  \end{itemize}
+\end{multicols}
+
+\hrule
+
+\section*{Education}
+\begin{itemize}[parsep=0.1cm,leftmargin=0.4cm]
+  \item \textbf{CS PhD at City University of Hong Kong}\ \dotfill\ 2022--26, Hong Kong
+  \begin{itemize}[itemsep=0cm,parsep=0cm,topsep=0cm,leftmargin=0.25cm,label=\labelitemiii]
+    \item Advisors: \href{https://www.cs.cityu.edu.hk/~jia/}{Prof. Xiaohua Jia}, \href{https://www.cs.cityu.edu.hk/~congwang/}{Prof. Cong Wang}
+  \end{itemize}
+  \item \textbf{CS BSc at University of Science and Technology of China}\ \dotfill\ 2018--22, Hefei, China
+\end{itemize}
+
+\section*{Publications}
+\begin{itemize}[parsep=0.1cm,leftmargin=0.4cm]
+  \item A submitted paper about cross-shard optimization in blockchain\ \dotfill\ \textbf{NSDI {\textquotesingle}23 Fall}
+  \begin{itemize}[itemsep=0cm,parsep=0cm,topsep=0cm,leftmargin=0.25cm,label=\labelitemiii]
+    \item I made almost the whole experience part including implementation, evaluation, and analysis.
+  \end{itemize}
+\end{itemize}
+
+\section*{Experiences}
+\begin{itemize}[parsep=0.1cm,leftmargin=0.4cm]
+  \item \textbf{Core member \& former CTO of \href{https://lug.ustc.edu.cn/}{USTCLUG}}\ \dotfill\ 2019--22, Hefei, China
+    \begin{itemize}[itemsep=0cm,parsep=0cm,topsep=0cm,leftmargin=0.25cm,label=\labelitemiii]
+      \item USTCLUG is one of the earliest and most well-known Linux groups (not limited to students) of China.
+      \item I participated in development/leadership of various USTCLUG projects including \href{https://vlab.ustc.edu.cn/}{VLAB}, \href{https://mirrors.ustc.edu.cn/}{USTC Software Mirror}, its \href{https://summer-ospp.ac.cn/}{OSPP} projects, its hardware infrastructure, etc.
+    \end{itemize}
+\end{itemize}
+
+\section*{Abilities}
+\begin{itemize}[parsep=0.1cm,leftmargin=0.4cm]
+  \item \textbf{Programming languages}:
+    I have production experiences on Python (Django), Rust, Go, JavaScript + TypeScript (React, Next.js).
+    I can also write C++ (basic modern C++), C, Shell script, Java, Verilog, C\# (sorted by familiarity).
+  \item \textbf{Natural languages}: Mandarin Chinese (mother tongue), English, Japanese (elementary listening only).
+\end{itemize}
+
+\blindtext[2]{}
 
 \end{document}
