@@ -30,9 +30,19 @@
 % List config helper
 \usepackage{enumitem}
 
+% Specify font encoding to avoid composed characters
+\usepackage[T1]{fontenc}
+
 % Specify fonts
-% For pretty programming language names only
 \usepackage{fontspec}
+% \setmainfont{DejaVu Serif}
+% \setsansfont{DejaVu Sans}
+% Require manual installation of DM Mono
+% \setmonofont{DM Mono}
+% Use sans font by default
+% \renewcommand{\familydefault}{\sfdefault}
+% For pretty programming language names
+% Require package ttf-liberation on Alpine
 \newfontface\fontfaceLiberationSerif{Liberation Serif}
 
 % Hyperlinks
@@ -99,7 +109,7 @@
   \item \textbf{Core member \& former CTO of \href{https://lug.ustc.edu.cn/}{USTCLUG}}\ \dotfill\ 2019--22, Hefei, China
     \begin{itemize}[itemsep=0cm,parsep=0cm,topsep=0cm,leftmargin=0.25cm,label=\labelitemiii]
       \item USTCLUG is one of China's earliest and most well-known Linux groups (not limited to students).
-      \item I participated in the development/leadership of various USTCLUG projects, e.g., \href{https://vlab.ustc.edu.cn/}{VLAB}, \href{https://mirrors.ustc.edu.cn/}{USTC Software Mirror}, its \href{https://summer-ospp.ac.cn/}{OSPP} projects, and its hardware infrastructure.
+      \item I participated in the development/leadership of various USTCLUG projects, e.g., \href{https://vlab.ustc.edu.cn/}{VLAB}, \href{https://mirrors.ustc.edu.cn/}{USTC Software Mirror}, its \href{https://summer-ospp.ac.cn/}{OSPP} projects, and the hardware infrastructure.
     \end{itemize}
 \end{itemize}
 
