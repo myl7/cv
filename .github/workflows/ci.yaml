@@ -16,4 +16,4 @@ jobs:
       - name: Upload output to WebDAV
         run: curl -X PUT -u "cv-ci:$CURL_PASSWORD" -T main.pdf https://s.myl.moe/public/cv.pdf
         env:
-          CURL_SECRET: ${{ secrets.CURL_PASSWORD }}
+          CURL_PASSWORD: ${{ secrets.CURL_PASSWORD }}
