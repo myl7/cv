@@ -14,6 +14,8 @@ jobs:
           latexmk_use_lualatex: true
           extra_system_packages: ttf-liberation
       - name: Upload output to WebDAV
-        run: curl -X PUT -u "cv-ci:$CURL_PASSWORD" -T main.pdf https://s.myl.moe/public/cv.pdf
+        run: curl -X PUT -u "$DAV_USERNAME:$DAV_PASSWORD" -T main.pdf "$DAV_URL"
         env:
-          CURL_PASSWORD: ${{ secrets.CURL_PASSWORD }}
+          DAV_URL: ${{ secrets.DAV_URL }}
+          DAV_USERNAME: ${{ secrets.DAV_USERNAME }}
+          DAV_PASSWORD: ${{ secrets.DAV_PASSWORD }}
